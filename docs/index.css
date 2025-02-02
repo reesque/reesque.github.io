@@ -90,12 +90,11 @@ body {
 #desc-container {
     position: absolute;
     left: 53vw;
-    top: 15.5vh;
+    margin-top: 67vh;
 }
 
 #desc {
     margin-left: 0.5vw;
-    margin-top: 52vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
