@@ -190,19 +190,18 @@ body {
 /* --- MOBILE RESPONSIVE OVERRIDES --- */
 @media screen and (max-width: 768px) {
     body {
-        overflow-y: auto; /* Allow scrolling on mobile so content isn't cut off */
+        overflow-y: auto;
     }
 
-    /* 1. Reset absolute layouts to a flexible column layout */
     body {
         display: flex;
         flex-direction: column;
         align-items: center;
         box-sizing: border-box;
         margin: 0;
+        padding: 25px;
     }
 
-    /* Adjust the background decorative clips for portrait */
     #frame-cross {
         display: none;
     }
@@ -211,7 +210,6 @@ body {
         display: none;
     }
 
-    /* 2. Reposition & Scale Profile Image */
     .profile-img {
         position: relative;
         left: auto;
@@ -219,11 +217,9 @@ body {
         height: auto;
         width: 70%;
         max-width: 280px;
-        margin-top: 25px;
         margin-bottom: 25px;
     }
 
-    /* 3. Re-style Name Section */
     #name-container {
         position: relative;
         left: auto;
@@ -234,7 +230,7 @@ body {
 
     #fullname {
         justify-content: center;
-        flex-wrap: wrap; /* Wraps name components gracefully if needed */
+        flex-wrap: wrap;
     }
 
     .name-with-ipa {
@@ -243,13 +239,13 @@ body {
     }
 
     .name-ipa {
-        font-size: 12px; /* Fixed sizing so it doesn't disappear */
+        font-size: 12px;
         margin-left: 0;
         margin-right: 0;
     }
 
     .name {
-        font-size: 2.5rem; /* Readable font scale */
+        font-size: 2.5rem;
         margin-top: 0;
     }
 
@@ -265,21 +261,18 @@ body {
         text-align: center;
     }
 
-    /* 4. Re-style Description Section */
     #desc-container {
         position: relative;
         right: auto;
         bottom: auto;
         width: 100%;
         max-width: 500px;
-        padding-bottom: 25px;
     }
 
     #desc {
-        text-align: left; /* Left align reads much better on mobile lists */
+        text-align: left;
     }
 
-    /* Override the desktop fixed width constraints */
     #desc span:nth-child(1),
     #desc span:nth-child(2),
     #desc span:nth-child(3) {
@@ -287,29 +280,28 @@ body {
     }
 
     .desc-line {
-        font-size: 15px; /* Fixed, comfortable reading text size */
+        font-size: 15px;
         text-align: left;
         border-right: none;
-        border-left: #333 4px solid; /* Flips the decorative accent line to the left */
+        border-left: #333 4px solid;
         padding-right: 0;
         padding-left: 15px;
         margin-left: 0;
     }
 
-    /* 5. Re-style Buttons for Mobile fingers */
     #social-container {
         margin-left: 0;
         margin-right: 0;
         margin-top: 30px;
-        flex-direction: column; /* Stack buttons vertically for easier tapping */
+        flex-direction: column;
         gap: 12px;
         width: 100%;
     }
 
     .button {
         font-size: 14px;
-        justify-content: center; /* Center the icons/text inside the button */
+        justify-content: center;
         margin: 0;
-        padding: 14px 20px; /* Larger tap targets */
+        padding: 14px 20px;
     }
 }
